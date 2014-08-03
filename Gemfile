@@ -29,7 +29,7 @@ gem 'spring',        group: :development
 
 
 group :test, :development do
-	gem 'rspec-rails', '~> 3.0.0'
+	gem 'rspec-rails', '~> 2.14'
 end
 group :test do
 	gem 'capybara', '~> 2.4.1'
