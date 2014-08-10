@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
   
-  #get 'users/new'
-
-  #get 'users/create'
-
-  #get 'users/show'
-
   root "projects#index"
   
   resources :projects do
@@ -13,6 +7,11 @@ Rails.application.routes.draw do
   end
 
   resources :users
+
+  get "/signin", to: "sessions#new"
+  post "/signin", to: "sessions#create"
+
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
